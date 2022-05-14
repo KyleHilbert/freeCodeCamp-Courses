@@ -1,0 +1,98 @@
+Notes for CatPhotoApp
+---------------------
+
+- Start every html document with this:
+    <!DOCTYPE html>
+    also add a head
+    <head>
+        <title>This is the title>
+        <link rel="Stylesheet" href="NameOfCSSFile">
+    </head>
+
+
+- Header tag starts with <h1> and goes up to <h6>
+    - The higher the numbers the smaller the text
+    - Tag must end like </h1>
+
+
+- Paragraph tag is used to create paragraph text
+    - Looks like this <p>Paragraph text</p>
+
+
+- Main section of page is declared with <main></main>
+    - Other elements are nested inside of the tags
+
+
+- You can add an image like <img src="Link" alt="Text">
+    - Needs no closing tag
+    - src is the link of the images
+    - alt is what will display if the image doesn't load correctly 
+
+
+- To break up the page into parts you can use the section tag <section></section>
+    - Makes it easier to read code
+
+
+- You can create an unordered list with the ul tag
+    - Use it like this:
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    - The items inside the list are created with <li></li>
+    - List defaults with bullet points
+
+
+- You can create an ordered list with the ol tag
+    - Use it like this:
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    - The items inside the list are created with <li></li>
+    - List defaults with numbers
+
+
+- The figure tag will allow you to associate an image with a caption
+    - Use it like this:
+        <figure>
+            <img src="link" alt="text">
+            <figcaption>This is the caption text</figcaption>
+        </figure>
+
+
+- Create a form element with <form action="link"></form>
+
+
+- The fieldset element is used to group related inputs and labels together <fieldset></fieldset>
+    - Block-level elements so they appear on a new line
+
+
+- The legend element acts a caption for the fieldset <legend></legend>
+    - Nested in fieldset element
+
+
+- Add radio button inputs like this:
+    <label><input id="text" type="radio" name="text" value="text" > Text</label>
+        - Input needs no closing tag
+        - Input is nested in <label></label> so there will be text for the radio button
+
+
+- Add checkbox like this:
+    <label><input id="text" type="checkbox" name="text" value="text" > Text</label>
+        - Input needs no closing tag
+        - Input is nested in <label></label> so there will be text for the radio button
+
+
+- Add textbox like this: 
+    <input type="text" name="text" placeholder="Text" required>
+        - Placeholder puts a default value in placeholder 
+        - Required makes it so the input needs to be filled out 
+
+
+- Footer is created with <footer></footer>
+
+
+
