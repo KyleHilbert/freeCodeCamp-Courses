@@ -1,113 +1,56 @@
+@@ -0,0 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Survey Form</title>
-		<link href="styles.css" rel="stylesheet" type="text/css" />
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
 
-	<body>
-		<div class="main-area">
-			<head>
-				<h1 id="title">Page Title</h1>
-				<p id="description">This is the description</p>
-			</head>
-			<hr />
-			<main>
-				<form id="survey-form">
-					<fieldset>
-						<label id="name-label"
-							>Name:
-							<input
-								id="name"
-								type="text"
-								placeholder="Full name here"
-								required
-						/></label>
-						<label id="email-label"
-							>Email:
-							<input id="email" type="email" placeholder="Email here" required
-						/></label>
-						<label id="number-label"
-							>Number:
-							<input
-								id="number"
-								type="number"
-								placeholder="#"
-								min="0"
-								max="69"
-								required
-						/></label>
-					</fieldset>
+  <body>
+    <div class="main-area">
+      <head>
+        <h1 id="title">Page Title</h1>
+        <p id="description">This is the description</p>
+      </head>
+      <hr>
+      <main>
+		  <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name: <input id="name" type="text" placeholder="Full name here" required></label>
+                <label id="email-label">Email: <input id="email" type="email" placeholder="Email here" required></label>
+                <label id="number-label">Number: <input id="number" type="number" placeholder="#" min=0 max=69 required></label>
+            </fieldset>
+            
+            <fieldset>
+                <label> Dropdown
+                    <select id="dropdown">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                    </select>
+                </label>
+            </fieldset>
 
-					<fieldset>
-						<label>
-							Dropdown
-							<select id="dropdown">
-								<option>Option 1</option>
-								<option>Option 2</option>
-							</select>
-						</label>
-					</fieldset>
+            <fieldset>
+                <label><input type="radio" value="radio1" name="radio1" class="inline">Radio for radio1</label>
+                <label><input type="radio" value="radio1" name="radio1" class="inline">Radio for radio1</label>
+                <label><input type="radio" value="radio2" name="radio2" class="inline">Radio for radio2</label>
+                <label><input type="radio" value="radio2" name="radio2" class="inline">Radio for radio2</label>
 
-					<fieldset>
-						<label
-							><input
-								type="radio"
-								value="radio1"
-								name="radio1"
-								class="inline"
-							/>Radio for radio1</label
-						>
-						<label
-							><input
-								type="radio"
-								value="radio1"
-								name="radio1"
-								class="inline"
-							/>Radio for radio1</label
-						>
-						<label
-							><input
-								type="radio"
-								value="radio2"
-								name="radio2"
-								class="inline"
-							/>Radio for radio2</label
-						>
-						<label
-							><input
-								type="radio"
-								value="radio2"
-								name="radio2"
-								class="inline"
-							/>Radio for radio2</label
-						>
+                <label><input type="checkbox" value="check1" class="inline">Checkbox1</label>
+                <label><input type="checkbox" value="check2" class="inline">Checkbox2</label>
+            </fieldset>
+          
 
-						<label
-							><input
-								type="checkbox"
-								value="check1"
-								class="inline"
-							/>Checkbox1</label
-						>
-						<label
-							><input
-								type="checkbox"
-								value="check2"
-								class="inline"
-							/>Checkbox2</label
-						>
-					</fieldset>
+            <fieldset>
+                <textarea placeholder="Type something here"></textarea>
+            </fieldset>
+        
 
-					<fieldset>
-						<textarea placeholder="Type something here"></textarea>
-					</fieldset>
-
-					<input id="submit" type="submit" value="Submit" />
-				</form>
-			</main>
-		</div>
-	</body>
+          <input id="submit" type="submit" value="Submit" />
+    	 </form>
+		</main>
+	</div>
+  </body>
 </html>
